@@ -42,6 +42,20 @@ def arc(obj, radius, arc):
         angle += 1
 
 
-arc(bob, 150, 270)
+# arc(bob, 150, 270)
+
+def petal(obj, radius, angle):
+    for i in range(2):
+        arc(obj, radius, angle)
+        obj.lt(180-angle)
+
+
+def flower(obj, n, radius, angle):
+    for i in range(n):
+        petal(obj, radius, angle)
+        obj.lt(360.0/n)
+
+
+flower(bob, 7, 60.0, 60.0)
 
 turtle.mainloop()
