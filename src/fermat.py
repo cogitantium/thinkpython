@@ -1,6 +1,6 @@
 def check_fermat(a, b, c, n):
     """
-    Fermat's Last Theorem states that there are now positive integers a,b, and c such that
+    Fermat's Last Theorem states that there are now positive integers a, b, and c such that
     a**n + b**n = c**n for any values of n greater than 2.
     :param a: must be positive
     :param b: must be positive
